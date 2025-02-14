@@ -3,175 +3,300 @@
    License: none (public domain)
 */
 /* reset styles */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* styles */
 .val_container {
-    display: grid;
-    place-content: center;
-	background: 
-    radial-gradient(circle closest-side at 60% 43%, #323232 26%, rgba(187,0,51,0) 27%),
-    radial-gradient(circle closest-side at 40% 43%, #323232 26%, rgba(187,0,51,0) 27%),
-    radial-gradient(circle closest-side at 40% 22%, #373737 45%, rgba(221,51,85,0) 46%),
-    radial-gradient(circle closest-side at 60% 22%, #373737 45%, rgba(221,51,85,0) 46%),
-    radial-gradient(circle closest-side at 50% 35%, #373737 30%, rgba(221,51,85,0) 31%),
-    
-    radial-gradient(circle closest-side at 60% 43%, #323232 26%, rgba(187,0,51,0) 27%) 50px 50px,
-    radial-gradient(circle closest-side at 40% 43%, #323232 26%, rgba(187,0,51,0) 27%) 50px 50px,
-    radial-gradient(circle closest-side at 40% 22%, #3c3c3c 45%, rgba(221,51,85,0) 46%) 50px 50px,
-    radial-gradient(circle closest-side at 60% 22%, #3c3c3c 45%, rgba(221,51,85,0) 46%) 50px 50px,
-    radial-gradient(circle closest-side at 50% 35%, #3c3c3c 30%, rgba(221,51,85,0) 31%) 50px 50px;
-    background-color:#323232;
-    background-size:100px 100px;
-    font-family: 'Lato', sans-serif;
-    height: 100dvh;
-    width: 100dvw; 
+  display: grid;
+  place-content: center;
+  background: radial-gradient(
+      circle closest-side at 60% 43%,
+      #323232 26%,
+      rgba(187, 0, 51, 0) 27%
+    ),
+    radial-gradient(
+      circle closest-side at 40% 43%,
+      #323232 26%,
+      rgba(187, 0, 51, 0) 27%
+    ),
+    radial-gradient(
+      circle closest-side at 40% 22%,
+      #373737 45%,
+      rgba(221, 51, 85, 0) 46%
+    ),
+    radial-gradient(
+      circle closest-side at 60% 22%,
+      #373737 45%,
+      rgba(221, 51, 85, 0) 46%
+    ),
+    radial-gradient(
+      circle closest-side at 50% 35%,
+      #373737 30%,
+      rgba(221, 51, 85, 0) 31%
+    ),
+    radial-gradient(
+        circle closest-side at 60% 43%,
+        #323232 26%,
+        rgba(187, 0, 51, 0) 27%
+      )
+      50px 50px,
+    radial-gradient(
+        circle closest-side at 40% 43%,
+        #323232 26%,
+        rgba(187, 0, 51, 0) 27%
+      )
+      50px 50px,
+    radial-gradient(
+        circle closest-side at 40% 22%,
+        #3c3c3c 45%,
+        rgba(221, 51, 85, 0) 46%
+      )
+      50px 50px,
+    radial-gradient(
+        circle closest-side at 60% 22%,
+        #3c3c3c 45%,
+        rgba(221, 51, 85, 0) 46%
+      )
+      50px 50px,
+    radial-gradient(
+        circle closest-side at 50% 35%,
+        #3c3c3c 30%,
+        rgba(221, 51, 85, 0) 31%
+      )
+      50px 50px;
+  background-color: #323232;
+  background-size: 100px 100px;
+  font-family: "Lato", sans-serif;
+  height: 100dvh;
+  width: 100dvw;
 }
 
-
 .val_proposition_title {
-    font-size: 50px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-wrap: wrap;
 }
 
 .val_proposition {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .val_proposition_buttons_label {
-    position: relative;
-    display: inline-block;
-    height: max-content;
+  position: relative;
+  display: inline-block;
+  height: max-content;
 }
 .val_proposition_buttons_input {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 10px solid red;
-    z-index: -1;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 10px solid red;
+  z-index: -1;
 }
 
-
 .val_proposition_button {
-	padding: 10px 40px; 
-	display: inline-block; 
-	cursor: pointer;
-	margin: 0 20px;
-	border-radius: 5px;
-	color: #FFFFFF;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	transition: transform 250s ease-in-out; 
+  padding: 10px 40px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  transition: transform 250s ease-in-out;
 }
 
 .val_proposition_button:hover {
-	transform: 	scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .val_proposition_button_no {
-	background-color: #D8124B;
+  background-color: #d8124b;
 }
 
 .val_proposition_button_yes {
-	background-color: #12D890;
+  background-color: #12d890;
 }
 
 /* video */
 
 .video_section {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /* change in js */
-    /* display: grid; */
-    place-content: center;
-   
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* change in js */
+  /* display: grid; */
+  place-content: center;
 }
 .video_wrapper_happy {
-    display: none;
-    background: pink
+  display: none;
+  background: pink;
 }
 .video_wrapper_sad {
-    display: none;
-    background: rgb(207, 209, 209)
+  display: none;
+  background: rgb(207, 209, 209);
 }
 .video_wrapper {
-    width: 100dvw;
-    height: 100dvh;
-    position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
 }
 .video_wrapper > video {
-    width: 100%;
-    height: 100dvh;
+  position: 50;
+  width: 100%;
+  height: 100dvh;
 }
 
 .video_wrapper > button {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, 0);
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
 
-    padding: 10px 40px; 
-	display: inline-block; 
-	cursor: pointer;
-	margin: 0 20px;
-	border-radius: 5px;
-	color: #FFFFFF;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	transition: transform 250s ease-in-out; 
+  margin: 0 auto;
+  max-width: 70%;
+  padding: 10px 40px;
+  display: inline-block;
+  cursor: pointer;
 
-    background-color: #cc41ef;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: transform 250s ease-in-out;
+
+  background-color: #cc41ef;
 }

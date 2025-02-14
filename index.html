@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vito4ka valentino4ka</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vito4ka valentino4ka</title>
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
 </head>
+
 <body>
-    
-<div class="val_container">
-    <section class="val_proposition_section">
-        <div class="val_proposition">
-            <h1 class="val_proposition_title">Will you be My Valentine, Vito4ka ?</h1>
-            <label class="val_proposition_buttons_wrapper">
-                <input  type="checkbox" class="val_proposition_buttons_input" id="val_proposition_answer">
-                <button class="val_proposition_button val_proposition_button_yes" id="val_proposition_button_yes" value="true">Yes</button>
-                <button class="val_proposition_button val_proposition_button_no" id="val_proposition_button_no" value="false">No</button> 
-            </label>
-        </div>
-    </section>
 
-    <section class="video_section" id="video_section">
-        <div class="video_wrapper video_wrapper_happy" id="video_wrapper_happy">
-            <video width="400" controls autoplay muted loop id="happy_videoId">
-                <source src="cat_happy_video.mp4" type="video/mp4" >
-            Your browser does not support HTML video.
-            </video>
-          <button id="repeat_button">I'm so happy! Do it again, Vito4ka !!!</button>
-        </div>
+	<div class="val_container">
+		<section class="val_proposition_section">
+			<div class="val_proposition">
+				<h1 class="val_proposition_title">Will you be My Valentine, Vito4ka ?</h1>
+				<label class="val_proposition_buttons_wrapper">
+					<input type="checkbox" class="val_proposition_buttons_input" id="val_proposition_answer">
+					<button class="val_proposition_button val_proposition_button_yes" id="val_proposition_button_yes"
+						value="true">Yes</button>
+					<button class="val_proposition_button val_proposition_button_no" id="val_proposition_button_no"
+						value="false">No</button>
+				</label>
+			</div>
+		</section>
 
-        <div  class="video_wrapper video_wrapper_sad" id="video_wrapper_sad">
-          <video width="400" controls autoplay muted id="sad_videoId">
-            <source src="cat_sad_video.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-          </video>
-          <button id="repeat_button">Wrong answer Vito4ka, repeat</button>
-        </div>
-    </section>
-</div>
+		<section class="video_section" id="video_section">
+			<div class="video_wrapper video_wrapper_happy" id="video_wrapper_happy">
+				<video width="400" playsinline autoplay muted loop id="happy_videoId">
+					<source src="cat_happy_video.mp4" type="video/mp4">
+					Your browser does not support HTML video.
+				</video>
+				<button id="repeat_button">
+					<p>I'm so happy!</p>
+					<p>Do it again, Vito4ka !!!</p>
+				</button>
+			</div>
+
+			<div class="video_wrapper video_wrapper_sad" id="video_wrapper_sad">
+				<video width="400" playsinline autoplay muted loop id="sad_videoId">
+					<source src="cat_sad_video.mp4" type="video/mp4">
+					Your browser does not support HTML video.
+				</video>
+				<button id="repeat_button">Wrong answer Vito4ka, repeat</button>
+			</div>
+		</section>
+	</div>
 
 
 
 </body>
+
 </html>
