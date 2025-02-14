@@ -98,3 +98,23 @@ function setNoButtonToDefault() {
 
   timesToIncrease = 2;
 }
+
+function getName() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const name = urlParams.get("name");
+  return name ?? "Honey";
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  const valentineName = getName();
+
+  const titleDoc = document.querySelector("#title-doc");
+  const questionName = document.querySelector("#question-name");
+  const doAgain = document.querySelector("#do-again");
+  const repeatNo = document.querySelectorAll("#repeat_button");
+  titleDoc.textContent = valentineName + " Valentine";
+  questionName.textContent = `Will you be My Valentine, ${valentineName} ?`;
+  doAgain.textContent = `Do it again, ${valentineName}!!!`;
+  repeatNo[1].textContent = `Wrong answer ${valentineName}, repeat`;
+});
