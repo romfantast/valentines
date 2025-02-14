@@ -106,13 +106,14 @@ function getName() {
   return name ?? "Honey";
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
   const valentineName = getName();
 
   const titleDoc = document.querySelector("#title-doc");
   const questionName = document.querySelector("#question-name");
   const doAgain = document.querySelector("#do-again");
   const repeatNo = document.querySelectorAll("#repeat_button");
+
   titleDoc.textContent = valentineName + " Valentine";
   questionName.textContent = `Will you be My Valentine, ${valentineName} ?`;
   doAgain.textContent = `Do it again, ${valentineName}!!!`;
