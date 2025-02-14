@@ -103,7 +103,7 @@ function getName() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const name = urlParams.get("name");
-  return name ?? "Honey";
+  return name || "Honey";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
